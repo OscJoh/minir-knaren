@@ -33,4 +33,3 @@ public class MathLibTests {
         assertEquals(expected, result, 0.00001);
     }
 }
-
