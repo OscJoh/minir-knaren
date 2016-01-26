@@ -19,7 +19,7 @@ public final class MathLib {
 	}
 
 	public static double squareRoot(double x) {
-		return 0;
+		return Math.pow(x, 0.5);
 	}
 
 	public static double getPI() {
