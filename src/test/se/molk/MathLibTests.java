@@ -7,7 +7,14 @@ import static org.junit.Assert.*;
 public class MathLibTests {
 	@Test
 	public void testAddition() {
-		assertEquals(1, 0);
+		double result = MathLib.add(18, 24);
+		double anotherResult = MathLib.add(1214, 123);
+
+		double expected = 42;
+		double unexpected = 1;
+
+		assertEquals(expected, result, .00001);
+		assertNotEquals(unexpected, anotherResult, .00001);
 	}
 
     @Test

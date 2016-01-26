@@ -2,7 +2,7 @@ package se.molk;
 
 public final class MathLib {
 	public static double add(double x, double y) {
-		return 0;
+		return x + y;
 	}
 
 	public static double subtract(double x, double y) {
