@@ -10,7 +10,7 @@ public final class MathLib {
 	}
 
 	public static double divide(double x, double y) {
-		return 0;
+		return x / y;
 	}
 
 	public static double multiply(double x, double y) {
