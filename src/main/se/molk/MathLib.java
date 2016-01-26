@@ -6,7 +6,12 @@ public final class MathLib {
 	}
 
 	public static double subtract(double x, double y) {
-		return 0;
+		double value_one = x;
+        double value_two = y;
+        double results = value_one - value_two;
+
+
+		return results;
 	}
 
 	public static double divide(double x, double y) {
