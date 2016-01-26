@@ -45,4 +45,18 @@ public class MathLibTests {
 		assertEquals(expected, result, .00001);
 		assertNotEquals(unexpected, anotherResult, .00001);
 	}
+
+	@Test
+
+	public void testsquareRoot() {
+		double result = MathLib.squareRoot(25);
+		double anotherResult = MathLib.squareRoot(64);
+		double expected = 5;
+		double unexpected = 10;
+
+		assertEquals(expected, result, .00001);
+
+		assertNotEquals(unexpected, anotherResult, .00001);
+
+	}
 }
