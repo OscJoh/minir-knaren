@@ -1,0 +1,8 @@
+# Intellij
+.idea/
+out/
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
