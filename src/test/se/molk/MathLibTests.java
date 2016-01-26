@@ -7,7 +7,7 @@ import org.junit.Test;
 public class MathLibTests {
 	@Test
 	public void testAddition() {
-		double result = MathLib.add(18, 42);
+		double result = MathLib.add(18, 24);
 		double anotherResult = MathLib.add(1214, 123);
 
 		double expected = 42;
