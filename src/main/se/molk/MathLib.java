@@ -6,8 +6,7 @@ public final class MathLib {
 	}
 
 	public static double subtract(double x, double y) {
-        double results = x - y;
-		return results;
+		return x-y;
 	}
 
 	public static double divide(double x, double y) {
@@ -22,7 +21,7 @@ public final class MathLib {
 		return Math.pow(x, 0.5);
 	}
 
-	public static double getPI() {
-		return 0;
+	public static double getPI(double x) {
+		return Math.
 	}
 }
