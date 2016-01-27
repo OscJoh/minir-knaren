@@ -14,7 +14,6 @@ public class MathLibTests {
 		assertEquals(expected, result, .00001);
 		assertNotEquals(unexpected, anotherResult, .00001);
 	}
-
     @Test
     public void test_subtraction(){
         MathLib calc = new MathLib();
@@ -22,7 +21,6 @@ public class MathLibTests {
         double expected = -4;
         assertEquals(expected, result, 0.00001);
     }
-
     @Test
     public void test_subtraction_failed(){
         MathLib calc = new MathLib();
@@ -30,7 +28,6 @@ public class MathLibTests {
         double expected = 4;
         assertEquals(expected, result, 0.00001);
     }
-
 	@Test
 	public void testDivision() {
 		double result = MathLib.divide(20, 2);
@@ -41,7 +38,6 @@ public class MathLibTests {
 		assertEquals(expected, result, .00001);
 		assertNotEquals(unexpected, anotherResult, .00001);
 	}
-
 	@Test
 	public void testsquareRoot() {
 		double result = MathLib.squareRoot(25);
@@ -51,5 +47,40 @@ public class MathLibTests {
 
 		assertEquals(expected, result, .00001);
 		assertNotEquals(unexpected, anotherResult, .00001);
+	}
+	@Test
+	public void test_pi() {
+		double result = MathLib.getPI();
+		double expected = 3.141592653589793;
+
+		assertEquals(expected, result, 0.00001);
+	}
+	@Test
+	public void test_pi_add() {
+		double result = MathLib.add(5, MathLib.getPI());
+		double expected = 8.141592653589793;
+
+		assertEquals(expected, result, 0.00001);
+	}
+	@Test
+	public void test_pi_subtract() {
+		double result = MathLib.add(8, MathLib.getPI());
+		double expected = 5.141592653589793;
+
+		assertEquals(expected, result, 0.00001);
+	}
+	@Test
+	public void test_pi_divide() {
+		double result = MathLib.add(5, MathLib.getPI());
+		double expected = 1.592356688;
+
+		assertEquals(expected, result, 0.00001);
+	}
+	@Test
+	public void test_pi_failed() {
+		double result = MathLib.getPI();
+		double expected = 3.14;
+
+		assertEquals(expected, result, 0.00001);
 	}
 }

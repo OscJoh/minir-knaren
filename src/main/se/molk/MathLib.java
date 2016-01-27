@@ -21,7 +21,7 @@ public final class MathLib {
 		return Math.pow(x, 0.5);
 	}
 
-	public static double getPI(double x) {
-		return Math.
+	public static double getPI() {
+		return Math.PI;
 	}
 }
