@@ -48,6 +48,7 @@ public class MathLibTests {
 		assertEquals(expected, result, .00001);
 		assertNotEquals(unexpected, anotherResult, .00001);
 	}
+
 	@Test
 	public void test_pi() {
 		double result = MathLib.getPI();
@@ -82,5 +83,17 @@ public class MathLibTests {
 		double expected = 3.14;
 
 		assertEquals(expected, result, 0.00001);
+	}
+
+	@Test
+	public void testMultiply(){
+		double result = MathLib.multiply(5, 9);
+		double anotherResult = MathLib.multiply(15, 10);
+		double expected = 45;
+		double unexpected = 10;
+
+		assertEquals(expected, result, 0.00001);
+		assertNotEquals(unexpected,anotherResult,0.00001);
+
 	}
 }
