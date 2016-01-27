@@ -14,7 +14,7 @@ public final class MathLib {
 	}
 
 	public static double multiply(double x, double y) {
-		return 0;
+		return x*y;
 	}
 
 	public static double squareRoot(double x) {
