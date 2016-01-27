@@ -96,4 +96,22 @@ public class MathLibTests {
 		assertNotEquals(unexpected,anotherResult,0.00001);
 
 	}
+
+	@Test
+	public void testExpressions() {
+		// Order of operations is disregarded for now
+		double result1 = MathLib.evaluateExpression("4 + 3");
+		double result2 = MathLib.evaluateExpression("4 + 3 - 2");
+		double result3 = MathLib.evaluateExpression("4 -3+ 2*5");
+		double result4 = MathLib.evaluateExpression("1.1 + 2.2 + 3.3 - 4.4");
+		double result5 = MathLib.evaluateExpression("-3 * 2");
+		double result6 = MathLib.evaluateExpression("2 * -2 + 10");
+
+		assertEquals(7, result1, 0.00001);
+		assertEquals(5, result2, 0.00001);
+		assertEquals(15, result3, 0.00001);
+		assertEquals(2.2, result4, 0.00001);
+		assertEquals(-6, result5, 0.00001);
+		assertEquals(6, result6, 0.00001);
+	}
 }

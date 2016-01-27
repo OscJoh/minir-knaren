@@ -24,4 +24,8 @@ public final class MathLib {
 	public static double getPI() {
 		return Math.PI;
 	}
+
+	public static double evaluateExpression(String s) {
+		return Lexer.evaluateExpression(s);
+	}
 }
