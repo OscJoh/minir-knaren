@@ -65,15 +65,29 @@ public class MathLibTests {
 	}
 	@Test
 	public void test_pi_subtract() {
-		double result = MathLib.add(8, MathLib.getPI());
-		double expected = 5.141592653589793;
+		double result = MathLib.subtract(8, MathLib.getPI());
+		double expected = 4.858407346410207;
 
 		assertEquals(expected, result, 0.00001);
 	}
 	@Test
 	public void test_pi_divide() {
-		double result = MathLib.add(5, MathLib.getPI());
-		double expected = 1.592356688;
+		double result = MathLib.divide(5, MathLib.getPI());
+		double expected = 1.5915494309189535;
+
+		assertEquals(expected, result, 0.00001);
+	}
+	@Test
+	public void test_pi_multiply() {
+		double result = MathLib.multiply(5, MathLib.getPI());
+		double expected = 15.707963267948966;
+
+		assertEquals(expected, result, 0.00001);
+	}
+	@Test
+	public void test_pi_square() {
+		double result = MathLib.squareRoot(MathLib.getPI());
+		double expected = 1.7724538509055159;
 
 		assertEquals(expected, result, 0.00001);
 	}
@@ -94,6 +108,5 @@ public class MathLibTests {
 
 		assertEquals(expected, result, 0.00001);
 		assertNotEquals(unexpected,anotherResult,0.00001);
-
 	}
 }
