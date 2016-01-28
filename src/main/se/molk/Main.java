@@ -69,7 +69,7 @@ public class Main {
 		while (true) {
 			System.out.println("Input expression: ");
 
-			String input = scanner.next();
+			String input = scanner.nextLine();
 
 			System.out.println(MathLib.evaluateExpression(input));
 			System.out.println();
